@@ -6,7 +6,7 @@ Splunk is a highly scalable, versatile, and robust data analytics software solut
 
 ![Splunk](/Intro-to-Splunk/images/Splunk-1.png) 
 
-![Splunk](/Splunk/Intro-to-Splunk/images/Splunk-1.png) 
+![Splunk](/Intro-to-Splunk/images/Splunk-1.png) 
 
 
 Splunk's (Splunk Enterprise) **architecture** consists of several layers that work together to collect, index, search, analyze, and visualize data. The architecture can be divided into the following main components: 
@@ -176,14 +176,14 @@ This is useful because GUIDs are not automatically extracted from 4662 event log
 
 - Suppose the following CSV file called **malware_lookup.csv**. 
 
-![Splunk](/Splunk/Intro-to-Splunk/images/malware.png) 
+![Splunk](/Intro-to-Splunk/images/malware.png) 
 
 This CSV file should be added as a new Lookup table as follows. 
 
-![Splunk](/Splunk/Intro-to-Splunk/images/lookup-1.png) 
-![Splunk](/Splunk/Intro-to-Splunk/images/lookup-2.png) 
-![Splunk](/Splunk/Intro-to-Splunk/images/lookup-3.png) 
-![Splunk](/Splunk/Intro-to-Splunk/images/lookup-4.png) 
+![Splunk](/Intro-to-Splunk/images/lookup-1.png) 
+![Splunk](/Intro-to-Splunk/images/lookup-2.png) 
+![Splunk](/Intro-to-Splunk/images/lookup-3.png) 
+![Splunk](/Intro-to-Splunk/images/lookup-4.png) 
 
 
 
@@ -332,7 +332,7 @@ When using the **Search & Reporting** application's user interface, identifying 
 > - **Data (Events):** Now, let's move on to identifying the data itself, in other words, the events. For this, we'll want to navigate to the **Search & Reporting app**. By exploring the events in the **Fast mode**, we can quickly scan through our data. **The Verbose mode**, on the other hand, lets us dive deep into each event's details, including its raw event data and all the fields that Splunk has extracted from it. 
 
 
-![Splunk](/Splunk/Intro-to-Splunk/images/search-1.png) 
+![Splunk](/Intro-to-Splunk/images/search-1.png) 
 
 
 In the search bar, we could simply **put * and hit search**, which will bring up all the data that we have indexed. However, this is usually a massive amount of data, and it might not be the most efficient way to go about it. A better approach might be to leverage the time picker and select a smaller time range (let's be careful while doing so though to not miss any important/useful historic logs). 
@@ -340,13 +340,13 @@ In the search bar, we could simply **put * and hit search**, which will bring up
 > - **Fields:** Lastly, to identify the fields in our data, let's look at an event in detail. We can click on any event in our search results to expand it. 
 
 
-![Splunk](/Splunk/Intro-to-Splunk/images/search-2.png) 
+![Splunk](/Intro-to-Splunk/images/search-2.png) 
 
 
 We can also see on the left hand side of the "Search & Reporting" application two categories of fields: **Selected Fields and Interesting Fields. Selected Fields** are fields that are always shown in the events (like **host, source, and sourcetype**), while **Interesting Fields** are those that appear in **at least 20% of the events**. By clicking **All fields**, we can see all the fields present in our events. 
 
 
-![Splunk](/Splunk/Intro-to-Splunk/images/search-3.png) 
+![Splunk](/Intro-to-Splunk/images/search-3.png) 
 
 
 - **Data Models:** Data Models provide an organized, hierarchical view of our data, simplifying complex datasets into understandable structures. They're designed to make it easier to create meaningful reports, visualizations, and dashboards without needing a deep understanding of the underlying data sources or the need to write complex SPL queries. Here is how we can use the Data Models feature to identify and understand our data: 
@@ -358,7 +358,7 @@ We can also see on the left hand side of the "Search & Reporting" application tw
 > - **Exploring Data Models**: By clicking on the name of a Data Model, we are taken to the **Data Model Editor**. This is where the true power of Data Models lies. Here, we can view the hierarchical structure of the data model, which is divided into **objects**. Each object represents a specific part of our data and contains **fields** that are relevant to that object. 
 
 
-![Splunk](/Splunk/Intro-to-Splunk/images/search-4.png) 
+![Splunk](/Intro-to-Splunk/images/search-4.png) 
 
 
 For example, if we have a Data Model that describes web traffic, we might see objects like **Web Transactions, Web Errors, etc**. Within these objects, we'll find fields like **status, url, user, etc.** 
@@ -367,6 +367,6 @@ For example, if we have a Data Model that describes web traffic, we might see ob
 - **Pivots:** Pivots are an extremely powerful feature in Splunk that allows us to create complex reports and visualizations without writing SPL queries. They provide an interactive, drag-and-drop interface for defining and refining our data reporting criteria. As such, they're also a fantastic tool for identifying and exploring the available data and fields within our Splunk environment. To start with Pivots to identify available data and fields, we can use the **Pivot button that appears when we're browsing a particular data model in the Data Models page.** 
 
 
-![Splunk](/Splunk/Intro-to-Splunk/images/search-5.png) 
+![Splunk](/Intro-to-Splunk/images/search-5.png) 
 
-![Splunk](/Splunk/Intro-to-Splunk/images/search-6.png) 
+![Splunk](/Intro-to-Splunk/images/search-6.png) 
